@@ -12,7 +12,6 @@ $background-color_5: red;
 $background-color_6: rgb(247, 243, 243);
 
 body {
-    background-color: black;
     overflow-x: hidden;
 }
 
@@ -23,7 +22,9 @@ body {
     height: 15vh;
 
     .tel {
-        display: none;
+        .shop{
+            display: none;
+        }
     }
 
     .logo {
@@ -563,8 +564,54 @@ body {
     p {
         margin-left: 25px;
     }
-
 }
+
+#home {
+    div {
+        width: 100%;
+        height: 140vh;
+
+        .q {
+            width: 40%;
+            background-color: #DB2D2E;
+        }
+
+        .s {
+            width: 60%;
+            background-color: #161920;
+        }
+    }
+
+    .car {
+        position: absolute;
+        top: 50%;
+        height: 0;
+
+        img {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 75%;
+        }
+
+    }
+
+    .yazi {
+        position: absolute;
+        top: 35%;
+        height: 0;
+
+        img {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 95%;
+        }
+
+
+    }
+}
+
 
 @media(max-width:567px) {
     body {
