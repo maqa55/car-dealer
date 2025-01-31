@@ -22,9 +22,7 @@ body {
     height: 15vh;
 
     .tel {
-        .shop{
-            display: none;
-        }
+        display: none;
     }
 
     .logo {
@@ -619,21 +617,64 @@ body {
     }
 
     .header {
+        overflow-x: hidden  !important;
+        height: 100vh;
         .tel {
+            display: block;
+
+            .shop {
+                display: flex;
+                justify-content: end;
+                position: relative;
+                top: 20px;
+                right: 10px;
+
+
+
+                .hed {
+                    .bars {
+                        text-decoration: none;
+                        display: inline-block;
+                        margin: 0 10px;
+                        color: white;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        display: inline-block;
+                        margin: 0 5px;
+
+
+                        .d {
+                            position: relative;
+                            top: -35px;
+                            right: -20px;
+
+                            span {
+                                left: 4px;
+                            }
+                        }
+
+                    }
+                }
+            }
+
             .telul {
+                position: absolute;
                 opacity: 0;
                 visibility: hidden;
-                position: absolute;
-                top: -50%;
+                top: -100%;
                 left: 0;
                 background-color: white;
                 width: 110%;
                 height: 100vh;
                 z-index: 99;
+                transition: 0.3s;
 
                 &.telnav {
                     opacity: 1;
                     visibility: visible;
+                    top: 0;
                 }
 
                 ul {
@@ -642,12 +683,17 @@ body {
 
                     .new2 {
                         ul {
+                            display: none;
 
-                            li {
+                            &.newblock {
+                                display: block;
+                            }
+
+                            .liaa {
                                 ul {
-                                    display: none;
+                                    display:none;
 
-                                    &.neww2 {
+                                    &.news2 {
                                         display: block;
                                     }
                                 }
@@ -684,9 +730,39 @@ body {
 
                     .new3 {
                         ul {
+                            display: none;
 
-                            li {
-                                .bloga {
+                            &.newblock {
+                                display: block;
+                            }
+
+                            .blogli {
+                                .blogar {
+                                    display: none;
+
+                                    &.new3 {
+                                        display: block;
+                                    }
+                                }
+
+                                a {
+                                    position: relative;
+                                    width: 100%;
+
+                                    i {
+                                        margin-left: 30%;
+                                        font-size: 12px;
+                                    }
+
+                                    .ir {
+                                        position: absolute;
+                                        right: 0%;
+                                    }
+                                }
+                            }
+
+                            .blogli {
+                                .blogaa {
                                     display: none;
 
                                     &.new3 {
@@ -740,7 +816,6 @@ body {
 
                             &.hom {
                                 display: block;
-
                             }
 
                             li {
@@ -834,6 +909,16 @@ body {
 
                         }
                     }
+
+                    .bl {
+                        ul {
+                            display: none;
+
+                            &.bll {
+                                display: block;
+                            }
+                        }
+                    }
                 }
 
                 .but {
@@ -843,38 +928,10 @@ body {
                     color: white;
                     text-align: center;
                     width: 80%;
-                    left: 40%;
-                    transform: translateX(-40%);
+                    left: 46%;
+                    transform: translateX(-50%);
                     padding: 8px;
                     background-color: #DB2D2E;
-                }
-            }
-
-            .shop {
-                display: flex;
-                justify-content: end;
-                position: relative;
-                top: 20px;
-                right: 10px;
-
-                .hed {
-
-                    a {
-                        text-decoration: none;
-                        display: inline-block;
-                        margin: 0 5px;
-
-
-                        .d {
-                            position: relative;
-                            top: -35px;
-                            right: -20px;
-
-                            span {
-                                left: 4px;
-                            }
-                        }
-                    }
                 }
             }
         }

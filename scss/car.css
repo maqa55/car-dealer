@@ -8,7 +8,7 @@ body {
   width: 100%;
   height: 15vh;
 }
-.header .tel .shop {
+.header .tel {
   display: none;
 }
 .header .logo {
@@ -476,40 +476,81 @@ body {
   body {
     overflow-x: hidden;
   }
+  .header {
+    overflow-x: hidden !important;
+    height: 100vh;
+  }
+  .header .tel {
+    display: block;
+  }
+  .header .tel .shop {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    top: 20px;
+    right: 10px;
+  }
+  .header .tel .shop .hed .bars {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+  }
+  .header .tel .shop .hed a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 5px;
+  }
+  .header .tel .shop .hed a .d {
+    position: relative;
+    top: -35px;
+    right: -20px;
+  }
+  .header .tel .shop .hed a .d span {
+    left: 4px;
+  }
   .header .tel .telul {
+    position: absolute;
     opacity: 0;
     visibility: hidden;
-    position: absolute;
-    top: -50%;
+    top: -100%;
     left: 0;
     background-color: white;
     width: 110%;
     height: 100vh;
     z-index: 99;
+    transition: 0.3s;
   }
   .header .tel .telul.telnav {
     opacity: 1;
     visibility: visible;
+    top: 0;
   }
   .header .tel .telul ul {
     position: relative;
     top: 8%;
   }
-  .header .tel .telul ul .new2 ul li ul {
+  .header .tel .telul ul .new2 ul {
     display: none;
   }
-  .header .tel .telul ul .new2 ul li ul.neww2 {
+  .header .tel .telul ul .new2 ul.newblock {
     display: block;
   }
-  .header .tel .telul ul .new2 ul li a {
+  .header .tel .telul ul .new2 ul .liaa ul {
+    display: none;
+  }
+  .header .tel .telul ul .new2 ul .liaa ul.news2 {
+    display: block;
+  }
+  .header .tel .telul ul .new2 ul .liaa a {
     position: relative;
     width: 100%;
   }
-  .header .tel .telul ul .new2 ul li a i {
+  .header .tel .telul ul .new2 ul .liaa a i {
     margin-left: 30%;
     font-size: 12px;
   }
-  .header .tel .telul ul .new2 ul li a .ir {
+  .header .tel .telul ul .new2 ul .liaa a .ir {
     position: absolute;
     right: 0%;
   }
@@ -521,21 +562,45 @@ body {
     position: absolute;
     right: 0%;
   }
-  .header .tel .telul ul .new3 ul li .bloga {
+  .header .tel .telul ul .new3 ul {
     display: none;
   }
-  .header .tel .telul ul .new3 ul li .bloga.new3 {
+  .header .tel .telul ul .new3 ul.newblock {
     display: block;
   }
-  .header .tel .telul ul .new3 ul li a {
+  .header .tel .telul ul .new3 ul .blogli .blogar {
+    display: none;
+  }
+  .header .tel .telul ul .new3 ul .blogli .blogar.new3 {
+    display: block;
+  }
+  .header .tel .telul ul .new3 ul .blogli a {
     position: relative;
     width: 100%;
   }
-  .header .tel .telul ul .new3 ul li a i {
+  .header .tel .telul ul .new3 ul .blogli a i {
     margin-left: 30%;
     font-size: 12px;
   }
-  .header .tel .telul ul .new3 ul li a .ir {
+  .header .tel .telul ul .new3 ul .blogli a .ir {
+    position: absolute;
+    right: 0%;
+  }
+  .header .tel .telul ul .new3 ul .blogli .blogaa {
+    display: none;
+  }
+  .header .tel .telul ul .new3 ul .blogli .blogaa.new3 {
+    display: block;
+  }
+  .header .tel .telul ul .new3 ul .blogli a {
+    position: relative;
+    width: 100%;
+  }
+  .header .tel .telul ul .new3 ul .blogli a i {
+    margin-left: 30%;
+    font-size: 12px;
+  }
+  .header .tel .telul ul .new3 ul .blogli a .ir {
     position: absolute;
     right: 0%;
   }
@@ -624,6 +689,12 @@ body {
     color: black;
     width: 95%;
   }
+  .header .tel .telul ul .bl ul {
+    display: none;
+  }
+  .header .tel .telul ul .bl ul.bll {
+    display: block;
+  }
   .header .tel .telul .but {
     position: absolute;
     bottom: 30px;
@@ -631,30 +702,10 @@ body {
     color: white;
     text-align: center;
     width: 80%;
-    left: 40%;
-    transform: translateX(-40%);
+    left: 46%;
+    transform: translateX(-50%);
     padding: 8px;
     background-color: #DB2D2E;
-  }
-  .header .tel .shop {
-    display: flex;
-    justify-content: end;
-    position: relative;
-    top: 20px;
-    right: 10px;
-  }
-  .header .tel .shop .hed a {
-    text-decoration: none;
-    display: inline-block;
-    margin: 0 5px;
-  }
-  .header .tel .shop .hed a .d {
-    position: relative;
-    top: -35px;
-    right: -20px;
-  }
-  .header .tel .shop .hed a .d span {
-    left: 4px;
   }
   .header .rh {
     top: -15px;
